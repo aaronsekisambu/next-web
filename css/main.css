@@ -1,0 +1,249 @@
+body,
+html {
+  font-family: ARS Maquette, Helvetica Neue, Arial, sans-serif;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  width: fit-content;
+}
+
+li {
+  display: inline-flex;
+}
+
+ul {
+  list-style: none;
+}
+
+.nav-bar {
+  width: auto;
+}
+
+.nav-small {
+  background-color: #131313;
+  display: flex;
+  justify-content: space-between;
+  padding-right: 2em;
+}
+
+.toggle-logo,
+.logo-gradient img {
+  display: none;
+}
+
+.top-right a {
+  color: #cfcfcf;
+  padding: 0 5px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.footer-links-menu li a {
+  color: #aaa;
+  margin: 1em 2em 0 0;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+li.nav-selections-section a {
+  color: #aaa;
+  display: block;
+  font-family: Shentox, sans-serif;
+  font-weight: 500;
+  height: 48px;
+  letter-spacing: 0.04em;
+  line-height: 1;
+  padding: 10px 10px;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav-bar ul.top-left a {
+  color: #cfcfcf;
+  padding: 0 5px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+
+.down-nav {
+  display: flex;
+  justify-content: space-between;
+  border-right: 1px solid grey;
+  height: 57px;
+}
+
+.nav-icon img {
+  width: 20px;
+  height: 20px;
+  margin: 0.5em 3em 0;
+  border-left: 1px solid grey;
+  padding: 4px;
+}
+
+.cover-section {
+  display: grid;
+  grid-template-columns: 50.249% 20.916% 27.816%;
+  grid-column-gap: 5px;
+  grid-row-gap: 5px;
+}
+
+.cover-story-one {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  height: auto;
+  background: linear-gradient(to top left, #c09, #f42 90%);
+}
+
+.cover-story {
+  background: linear-gradient(to bottom, #57555775, #020000d2 50%), url(../assets/iphone.jpeg);
+  height: auto;
+  background-size: cover;
+}
+
+.cover-byline {
+  padding: 5px;
+  color: #ff99;
+  margin-left: 4em;
+}
+
+.time-zone,
+.share-zone {
+  padding-right: 5px;
+}
+
+.cover-section-header {
+  color: white;
+  font-size: 40px;
+  margin-left: 1em;
+}
+
+.cover-section-side {
+  color: white;
+  font-size: 20px;
+  margin-left: 1em;
+}
+
+.cover-header {
+  padding-left: 5px;
+}
+
+.image-cover {
+  margin-left: 2em;
+}
+
+.col-lg,
+.col-sm,
+.col-md {
+  display: block;
+  width: 240px;
+  height: 120px;
+  margin: 0 2em 0 0;
+}
+
+.latest-news-header h1 {
+  margin: 2em 0 0 15.3em;
+}
+
+.latest-news {
+  height: 540px;
+}
+
+.image-with-story img {
+  width: 240px;
+  height: 120px;
+}
+
+.row-news {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.footer-section {
+  display: flex;
+  justify-content: center;
+  background: #131313;
+  height: 170px;
+}
+
+.footer-links {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-links-social li {
+  background: #333;
+  border-radius: 50%;
+  padding: 12px;
+  text-align: center;
+  margin: 1em 2em 0 0;
+}
+
+.footer-legal {
+  color: white;
+  padding-top: 3em;
+  text-align: center;
+  height: 50px;
+  background: #000;
+}
+
+@media all and (max-width: 1024px) {
+  .top-right {
+    display: none;
+  }
+
+  .toggle-logo {
+    width: 150px;
+    height: 100px;
+    background: linear-gradient(to bottom right, #c09, #f42 85%);
+    float: left;
+    display: block;
+  }
+
+  .logo-gradient img {
+    color: white;
+    display: block;
+    font-size: 40px;
+    height: 100px;
+    width: 150px;
+  }
+}
+
+@media all and (max-width: 425px) {
+  .row-news {
+    flex-wrap: wrap;
+  }
+
+  .col-lg,
+  .col-sm,
+  .col-md {
+    height: 289px;
+  }
+
+  .latest-news-header h1 {
+    margin: 2em 0 0 0;
+    text-align: center;
+  }
+
+  .latest-news {
+    height: 1200px;
+  }
+
+  .cover-section {
+    grid-template-columns: 50% 50%;
+  }
+
+  body {
+    width: 438px;
+  }
+
+  .nav-bar {
+    width: 446px;
+  }
+
+  .footer {
+    width: 446px;
+  }
+}
